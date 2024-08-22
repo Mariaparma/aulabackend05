@@ -1,0 +1,19 @@
+{
+  "name": "aula-05",
+  "version": "1.0.0",
+  "description": "Projeto inicial de Back-End com NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "notejs",
+    "back-end",
+    "senai",
+    "computador",
+    "logica",
+    "dev"
+  ],
+  "author": "Maria Eduarda Parma",
+  "license": "MIT"
+}
