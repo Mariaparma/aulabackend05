@@ -54,7 +54,7 @@ app.get("/", (rec, res) => {
 });
 
 app.get("/doces", (rec, res) => {
-    return res.status(200).send(guloseimas)
+    return res.status(201).send(guloseimas)
 });
 
 app.post("/doces", (rec, res) => {
