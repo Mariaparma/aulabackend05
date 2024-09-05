@@ -54,4 +54,20 @@ docesRoutes.get("/:id", (req, res) => {
     return res.status(200).send (guloseima);
 });
 
+//rota para editar uma guloseima
+docesRoutes.put("/:id", (req, res) => {
+    const  { id }  = req.params
+
+    const guloseima = guloseimas.find( (doce) => doce.id === Number(id)  );
+
+    if (!guloseima) {
+        return res.status(404) .send ( { message: "Guloseima não encontrada!" });
+    }
+
+    const { nome, preco } = req.body;
+    guloseima.nome = nome
+    guloseima.preco = preco
+    return res.status(200).send ({ message: "Guloseima atualizada", guloseima})
+});
+
 export default docesRoutes;

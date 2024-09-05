@@ -21,5 +21,5 @@ const filmesMarcantes = [
 ]
 
 app.get("/", (rec, res) => {
-    return res.status(200).send({ message: "Hello, World!"})
+    return res.status(200).send({ message: "Luan Santana é lindo"})
 });
